@@ -54,4 +54,37 @@
       <version>${mahout.version}</version>
     </dependency>
   </dependencies>
+         
+  <profiles>
+    <profile>
+      <id>spark2.0</id>
+      <activation>
+        <property>
+          <name>spark</name>
+          <value>2.0</value>
+        </property>
+      </activation>
+    </profile>         
+
+    <profile>
+      <id>spark2.1</id>
+      <activation>
+        <property>
+          <name>spark</name>
+          <value>2.1</value>
+        </property>
+      </activation>
+    </profile>  
+           
+    <profile>
+      <id>spark2.2</id>
+      <activation>
+        <property>
+          <name>spark</name>
+          <value>2.2</value>
+        </property>
+      </activation>
+    </profile>         
+        
+  </profiles>         
 </project>
